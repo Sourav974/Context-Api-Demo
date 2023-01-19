@@ -2,14 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { CounterProvider } from "./Context/Counter";
+// import { CounterProvider } from "./Context/Counter";
+import { CartProvider } from "./Context/Cart";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CounterProvider>
+    <CartProvider>
       <App />
-    </CounterProvider>
+    </CartProvider>
   </React.StrictMode>
 );
 
